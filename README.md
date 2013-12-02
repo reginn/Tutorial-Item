@@ -7,27 +7,26 @@ Minecraft Item Tutorial on Forge
 
 Eclipse上で実行する場合, assetsフォルダはeclipse/minecraft/bin/assets/に上書きしてください.
 
-==================
-パッケージについて
+チュートリアル内容
 ==================
 
 com.sample.item.basic
 
-:Item追加の基本
+* Item追加の基本
 
 com.sample.item.icon
 
-:バニラのテクスチャをアイコンにするアイテムの追加
+* バニラのテクスチャをアイコンにするアイテムの追加
 
 com.sample.item.customicon
 
-:独自のテクスチャをアイコンにするアイテムの追加
+* 独自のテクスチャをアイコンにするアイテムの追加
 
 com.sample.item.color
 
-:バニラのテクスチャの色違いアイテムの追加
+* バニラのテクスチャの色違いアイテムの追加
 
 com.sample.item.complex
 
-:2つのテクスチャを重ねたアイコンにするアイテムの追加
+* 2つのテクスチャを重ねたアイコンにするアイテムの追加
 
