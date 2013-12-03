@@ -33,7 +33,7 @@ public class SampleItemBasicCore {
 		 * setCreativeTabはクリエイティブモードのインベントリでどのタブに配置するかを決める. 今回はMaterial(素材)タブ.
 		 * 今回はアイコンを設定していないので, このModを実行すると市松模様のアイテムがMaterialタブに追加される
 		 */
-		itemBasic = (new Item(4000 - 256)).setUnlocalizedName("itemBasic").setCreativeTab(CreativeTabs.tabMaterials);
+		itemBasic = (new Item(10000 - 256)).setUnlocalizedName("itemBasic").setCreativeTab(CreativeTabs.tabMaterials);
 
 		// 表示名を設定
 		LanguageRegistry.addName(itemBasic, "Sample Item");

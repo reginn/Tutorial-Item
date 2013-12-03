@@ -1,4 +1,4 @@
-package com.sample.item.color;
+package com.sample.item.icon;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

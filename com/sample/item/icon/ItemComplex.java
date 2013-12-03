@@ -1,4 +1,4 @@
-package com.sample.item.complex;
+package com.sample.item.icon;
 
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
@@ -14,9 +14,6 @@ public class ItemComplex extends Item {
 	@SideOnly(Side.CLIENT)
 	Icon overIcon;
 
-	@SideOnly(Side.CLIENT)
-	Icon underIcon;
-
 	public ItemComplex(int itemId) {
 		super(itemId);
 	}
@@ -28,8 +25,8 @@ public class ItemComplex extends Item {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IconRegister iconRegister) {
-		overIcon   = iconRegister.registerIcon("complex:rect");
-		underIcon = iconRegister.registerIcon("complex:cross");
+		super.registerIcons(iconRegister);
+		overIcon  = iconRegister.registerIcon("icon:rect");
 	}
 
 	/*
@@ -51,7 +48,7 @@ public class ItemComplex extends Item {
 	@SideOnly(Side.CLIENT)
 	public Icon getIconFromDamageForRenderPass(int damage, int renderPass)
 	{
-		return renderPass > 0 ? this.overIcon : this.underIcon;
+		return renderPass > 0 ? this.overIcon : this.itemIcon;
 	}
 
 }
