@@ -16,17 +16,19 @@ com.sample.item.basic
 
 com.sample.item.icon
 
-* バニラのテクスチャをアイコンにするアイテムの追加
+* アイテムのアイコンの基本
+* バニラのテクスチャを利用するアイコン
+* 独自のテクスチャを利用するアイコン
+* RGB乗算による色違いのアイコン
+* 2つのアイコンを重ねたアイコン
 
-com.sample.item.customicon
+com.sample.item.food
 
-* 独自のテクスチャをアイコンにするアイテムの追加
+* 食べ物追加の基本
+* ポーション効果を持つ食べ物の追加
 
-com.sample.item.color
+com.sample.item.tool
 
-* バニラのテクスチャの色違いアイテムの追加
-
-com.sample.item.complex
-
-* 2つのテクスチャを重ねたアイコンにするアイテムの追加
+* 単純なツール追加の基本
+* ショベル, 斧, つるはし, クワの追加
 
