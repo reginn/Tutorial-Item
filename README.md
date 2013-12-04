@@ -32,3 +32,10 @@ com.sample.item.tool
 * 単純なツール追加の基本
 * ショベル, 斧, つるはし, クワの追加
 
+com.sample.item.weapon
+
+* 単純な武器の追加の基本
+
+com.sample.item.armor
+
+* 単純な防具4種の追加の基本
