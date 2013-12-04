@@ -1,7 +1,7 @@
 Item-Tutorial
 =============
 
-Minecraft Item Tutorial on Forge
+Item Tutorial on Forge for Minecraft 1.6.x
 
 実行する際はcomフォルダをsrc/minecraft/に, assetsフォルダをbin/minecraft/にコピーしてください.
 
