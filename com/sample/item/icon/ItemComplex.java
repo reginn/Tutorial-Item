@@ -19,8 +19,10 @@ public class ItemComplex extends Item {
 	}
 
 	/*
-	 * Iconを登録する
-	 * registerIconの引数は, setTextureNameの引数と同じ
+	 * Iconを登録するメソッド.
+	 * クライアントのみなのでSideOnlyアノテーションの付与が必要.
+	 * registerIconの引数は, setTextureNameの引数と同じ.
+	 * まずsuper.registerIcons()をする必要がある.
 	 */
 	@Override
 	@SideOnly(Side.CLIENT)
@@ -31,6 +33,7 @@ public class ItemComplex extends Item {
 
 	/*
 	 * Iconでレイヤーを利用するかどうかを返すメソッド
+	 * クライアントのみなのでSideOnlyアノテーションの付与が必要.
 	 * 今回は利用するのでtrueを返している
 	 */
 	@Override
@@ -42,7 +45,9 @@ public class ItemComplex extends Item {
 
 	/*
 	 * renderPass(描画の順序)を設定するメソッド
-	 * 今回は四角系が上で, バツ印が下になるように設定
+	 * クライアントのみなのでSideOnlyアノテーションの付与が必要.
+	 * 今回は四角系が上で, バツ印が下になるように設定.
+	 * 引数のダメージ値を利用すればより複雑な処理が可能.
 	 */
 	@Override
 	@SideOnly(Side.CLIENT)

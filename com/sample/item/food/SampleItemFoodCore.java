@@ -25,6 +25,7 @@ public class SampleItemFoodCore {
 		 * 食べられる石炭, 食べたときの回復量はパンと同じ
 		 * ItemFoodの引数は(ItemID, 空腹度の回復量, 腹もちのよさ, オオカミの餌に出来るかどうか)
 		 * 他は今まで通り
+		 * クリエイティブタブの食べ物タブに追加する.
 		 */
 		itemFood = (new ItemFood(10005 - 256, 5, 0.6F, false))
 				.setUnlocalizedName("itemFood")

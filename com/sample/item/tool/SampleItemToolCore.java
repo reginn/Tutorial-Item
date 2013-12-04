@@ -46,6 +46,7 @@ public class SampleItemToolCore {
 		/*
 		 * ToolMaterialを追加してアイテムを生成するだけなので, 既存のクラスからインスタンスを作成する.
 		 * それぞれ引数は共通で(ItemID, EnumToolMaterial), EnumHelperで作成したToolMaterialを引数に渡している.
+		 * 全てクリエイティブタブのツールタブに追加する.
 		 */
 		itemRedShovel = (new ItemSpade(10007 - 256, RED))
 				.setUnlocalizedName("itemRedShovel")
