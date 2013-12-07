@@ -1,7 +1,7 @@
-Item-Tutorial
+Tutorial-Item
 =============
 
-Item Tutorial on Forge for Minecraft 1.6.x
+Minecraft 1.6.x Modding Item-Tutorial with Minecraft Forge #943.
 
 実行する際はcomフォルダをsrc/minecraft/に, assetsフォルダをbin/minecraft/にコピーしてください.
 
@@ -34,8 +34,12 @@ com.sample.item.tool
 
 com.sample.item.weapon
 
-* 単純な武器の追加の基本
+* 単純な武器の追加
 
 com.sample.item.armor
 
-* 単純な防具4種の追加の基本
+* 単純な防具4種の追加
+
+com.sample.item.bow
+
+* 単純な弓の追加
