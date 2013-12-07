@@ -1,7 +1,7 @@
 Tutorial-Item
 =============
 
-Minecraft 1.6.x Modding Item-Tutorial with Minecraft Forge #943.
+Minecraft 1.6.x Modding Tutorial "Item" with Minecraft Forge #943.
 
 実行する際はcomフォルダをsrc/minecraft/に, assetsフォルダをbin/minecraft/にコピーしてください.
 
