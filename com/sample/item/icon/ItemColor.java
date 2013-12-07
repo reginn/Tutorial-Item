@@ -18,7 +18,7 @@ public class ItemColor extends Item {
 	/*
 	 * IconにRGBの乗算を行うメソッド
 	 * クライアント側だけなのにで, SideOnlyアノテーションの付与が必要.
-	 * 戻り値はintなので, 0xRRGGBBを参考に乗算したい色のカラーコードを返す.
+	 * 戻り値はintなので, 0xRRBBGGを参考に乗算したい色のカラーコードを返す.
 	 * 引数はItemStackとItemStackのダメージ値, そのためItemStackのNBTやダメージ値によって乗算する色を変えることも可能.
 	 */
 	@Override
