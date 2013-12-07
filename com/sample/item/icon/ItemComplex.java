@@ -14,8 +14,8 @@ public class ItemComplex extends Item {
 	@SideOnly(Side.CLIENT)
 	Icon overIcon;
 
-	public ItemComplex(int itemId) {
-		super(itemId);
+	public ItemComplex(int itemID) {
+		super(itemID);
 	}
 
 	/*
