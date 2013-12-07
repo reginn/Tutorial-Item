@@ -11,8 +11,8 @@ public class ItemSampleArmor extends ItemArmor {
 	 * スーパークラス(ItemArmor)のコンストラクタを呼び初期化する.
 	 * ItemArmorのコンストラクタの第3引数はバニラのテクスチャを参照するのに使うため, 今回は使わないので0
 	 */
-	public ItemSampleArmor(int itemId, EnumArmorMaterial material, int armorType) {
-		super(itemId, material, 0, armorType);
+	public ItemSampleArmor(int itemID, EnumArmorMaterial material, int armorType) {
+		super(itemID, material, 0, armorType);
 	}
 
 	/*

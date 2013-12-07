@@ -11,8 +11,8 @@ public class ItemColor extends Item {
 	 * コンストラクタ
 	 * 特にやることはないのでスーパークラスのコンストラクタに引数を渡すだけ.
 	 */
-	public ItemColor(int itemId) {
-		super(itemId);
+	public ItemColor(int itemID) {
+		super(itemID);
 	}
 
 	/*

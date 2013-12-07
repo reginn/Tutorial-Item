@@ -56,7 +56,6 @@ public class SampleItemIconCore {
 		 * 基本はいままでどおり, ItemクラスではなくItemクラスを継承したItemComplexクラスからインスタンスを生成する.
 		 * 今回はsetTextureNameで指定したテクスチャに, ItemComplex内で追加したテクスチャを重ねている.
 		 */
-
 		itemIconUsesComplexTexture = (new ItemComplex(10004 - 256))
 				.setUnlocalizedName("itemComplexIcon")
 				.setTextureName("icon:cross")
