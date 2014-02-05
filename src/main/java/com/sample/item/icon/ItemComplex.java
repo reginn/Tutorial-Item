@@ -1,21 +1,23 @@
 package com.sample.item.icon;
 
-import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.item.Item;
-import net.minecraft.util.Icon;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemComplex extends Item {
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.Item;
+import net.minecraft.util.IIcon;
+
+public class ItemComplex extends Item
+{
 	/*
 	 * Iconクラスはクライアントのみなので, SideOnlyアノテーションの付与が必要
 	 */
 	@SideOnly(Side.CLIENT)
-	Icon overIcon;
+    IIcon overIcon;
 
-	public ItemComplex(int itemID) {
-		super(itemID);
+	public ItemComplex()
+	{
+		super();
 	}
 
 	/*
@@ -26,7 +28,8 @@ public class ItemComplex extends Item {
 	 */
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+	{
 		super.registerIcons(iconRegister);
 		overIcon  = iconRegister.registerIcon("icon:rect");
 	}
@@ -51,7 +54,7 @@ public class ItemComplex extends Item {
 	 */
 	@Override
 	@SideOnly(Side.CLIENT)
-	public Icon getIconFromDamageForRenderPass(int damage, int renderPass)
+	public IIcon getIconFromDamageForRenderPass(int damage, int renderPass)
 	{
 		return renderPass > 0 ? this.overIcon : this.itemIcon;
 	}

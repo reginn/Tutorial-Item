@@ -1,18 +1,18 @@
 package com.sample.item.armor;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
-public class ItemSampleArmor extends ItemArmor {
-
+public class ItemSampleArmor extends ItemArmor
+{
 	/*
 	 * スーパークラス(ItemArmor)のコンストラクタを呼び初期化する.
 	 * ItemArmorのコンストラクタの第3引数はバニラのテクスチャを参照するのに使うため, 今回は使わないので0
 	 */
-	public ItemSampleArmor(int itemID, EnumArmorMaterial material, int armorType) {
-		super(itemID, material, 0, armorType);
+	public ItemSampleArmor(ItemArmor.ArmorMaterial material, int armorType)
+	{
+		super(material, 0, armorType);
 	}
 
 	/*
@@ -35,11 +35,12 @@ public class ItemSampleArmor extends ItemArmor {
 	 * type : バニラの革防具のようにする場合に利用する. 今回は利用しない.
 	 */
 	@Override
-	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
-		if (this.armorType == SampleItemArmorCore.LEGGINGS) {
+	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
+	{
+		if (this.armorType == SampleItemArmorCore.LEGGINGS)
+		{
 			return "armor:textures/models/armor/green_layer_2.png";
 		}
 		return "armor:textures/models/armor/green_layer_1.png";
 	}
-
 }

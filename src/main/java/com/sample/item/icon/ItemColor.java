@@ -1,18 +1,20 @@
 package com.sample.item.icon;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemColor extends Item {
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+
+public class ItemColor extends Item
+{
 	/*
 	 * コンストラクタ
 	 * 特にやることはないのでスーパークラスのコンストラクタに引数を渡すだけ.
 	 */
-	public ItemColor(int itemID) {
-		super(itemID);
+	public ItemColor()
+    {
+		super();
 	}
 
 	/*
@@ -23,7 +25,8 @@ public class ItemColor extends Item {
 	 */
 	@Override
 	@SideOnly(Side.CLIENT)
-	public int getColorFromItemStack(ItemStack itemStack, int damage) {
+	public int getColorFromItemStack(ItemStack itemStack, int damage)
+	{
 		return 0x0000FF;
 	}
 }

@@ -1,22 +1,24 @@
 package com.sample.item.bow;
 
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
-@Mod(
-	modid   = "ItemBow",
-	name    = "ItemBow",
-	version = "0.0.0"
-)
-public class SampleItemBowCore {
+@Mod(modid   = SampleItemBowCore.MODID, version = SampleItemBowCore.VERSION)
+public class SampleItemBowCore
+{
+	public static final String MODID = "ItemBow";
+	public static final String VERSION = "0.0.0";
 
 	public static Item itemBow;
 
 	@Mod.EventHandler
-	public void init(FMLInitializationEvent event) {
+	public void preInit(FMLPreInitializationEvent event)
+	{
 		/*
 		 * ItemBowを継承したItemSampleBowクラスでインスタンスを生成する.
 		 * setTextureNameしていないのは, ItemBowクラスのregisterIconsで"バニラの弓アニメーション"アイコンをロードしているためである.
@@ -26,10 +28,10 @@ public class SampleItemBowCore {
 		 * 判定を行っているため, modで追加する弓の描画をバニラと同等のものにするにはやや大変(IItemRendererを利用する必要あり).
 		 * そのため, 今回は簡単に出来て"それっぽい"描画方式にしている.
 		 */
-		itemBow = (new ItemSampleBow(10016 - 256))
+		itemBow = (new ItemSampleBow())
 				.setUnlocalizedName("itemBow")
 				.setFull3D();
 
-		LanguageRegistry.addName(itemBow, "Sample Black Bow");
+		GameRegistry.registerItem(itemBow, "ItemBow");
 	}
 }

@@ -1,24 +1,24 @@
 package com.sample.item.bow;
 
-import net.minecraft.client.renderer.texture.IconRegister;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.Icon;
+import net.minecraft.util.IIcon;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-
-public class ItemSampleBow extends ItemBow {
-
+public class ItemSampleBow extends ItemBow
+{
 	/*
 	 * 弓のアニメーション用のアイコンの配列
 	 */
 	@SideOnly(Side.CLIENT)
-	private Icon[] icons;
+	private IIcon[] icons;
 
-	public ItemSampleBow(int itemID) {
-		super(itemID);
+	public ItemSampleBow()
+	{
+		super();
 	}
 
 	/*
@@ -27,9 +27,10 @@ public class ItemSampleBow extends ItemBow {
 	 */
 	@Override
 	@SideOnly(Side.CLIENT)
-	public void registerIcons(IconRegister iconRegister) {
+	public void registerIcons(IIconRegister iconRegister)
+    {
 		this.itemIcon = iconRegister.registerIcon("bow:black_bow_standby");
-		this.icons = new Icon[3];
+		this.icons = new IIcon[3];
 		this.icons[0] = iconRegister.registerIcon("bow:black_bow_pulling_0");
 		this.icons[1] = iconRegister.registerIcon("bow:black_bow_pulling_1");
 		this.icons[2] = iconRegister.registerIcon("bow:black_bow_pulling_2");
@@ -44,9 +45,9 @@ public class ItemSampleBow extends ItemBow {
 	 */
 	@Override
 	@SideOnly(Side.CLIENT)
-	public Icon getIcon(ItemStack stack, int renderPass, EntityPlayer player, ItemStack usingItem, int useRemaining)
+	public IIcon getIcon(ItemStack stack, int renderPass, EntityPlayer player, ItemStack usingItem, int useRemaining)
 	{
-		if (usingItem != null && usingItem.getItem().itemID == this.itemID)
+		if (usingItem != null && usingItem.getItem() instanceof ItemSampleBow)
 		{
 			int k = usingItem.getMaxItemUseDuration() - useRemaining;
 			if (k >= 18) return this.icons[2];
