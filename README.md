@@ -6,9 +6,7 @@ Tutorial-Item
 * Minecraft Forge #1024
 * IntelliJ IDEA 13.02
 
-srcを上書きしてください.
-
-チュートリアル内容
+サンプル内容
 ==================
 
 com.sample.item.basic
