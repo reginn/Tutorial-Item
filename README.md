@@ -1,4 +1,5 @@
 # Tutorial-Item
+アイテムの追加, テクスチャの設定方法, 食べ物, ツール, 武器, 防具の追加に関するサンプル.
 
 ## 開発環境
 * Minecraft 1.7.2
@@ -42,14 +43,14 @@
 * 単純なツール追加の基本
 * ショベル, 斧, つるはし, クワの追加
 
-com.sample.item.weapon
+### com.sample.item.weapon
 
 * 単純な武器の追加
 
-com.sample.item.armor
+### com.sample.item.armor
 
 * 単純な防具4種の追加
 
-com.sample.item.bow
+### com.sample.item.bow
 
 * 単純な弓の追加
